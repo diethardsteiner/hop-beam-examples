@@ -26,7 +26,7 @@
           <children>
             <child>
               <id>hopType</id>
-              <value>Timestamp</value>
+              <value>Date</value>
               <type>String</type>
             </child>
             <child>

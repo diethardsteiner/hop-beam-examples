@@ -27,12 +27,12 @@
       <parameter>
         <name>PARAM_OUTPUT_DATASET_FIELD_ENCLOSURE</name>
         <default_value/>
-        <description/>
+        <description>Output dataset field enclosure</description>
       </parameter>
       <parameter>
         <name>PARAM_OUTPUT_DATASET_FIELD_SEPARATOR</name>
         <default_value/>
-        <description/>
+        <description>Output dataset field separator</description>
       </parameter>
       <parameter>
         <name>PARAM_OUTPUT_DATASET_FILE_PATH</name>
@@ -41,13 +41,13 @@
       </parameter>
       <parameter>
         <name>PARAM_OUTPUT_DATASET_FILE_PREFIX</name>
-        <default_value/>
-        <description/>
+        <default_value>events</default_value>
+        <description>Output dataset file prefix</description>
       </parameter>
       <parameter>
         <name>PARAM_OUTPUT_DATASET_FILE_SUFFIX</name>
         <default_value>.csv</default_value>
-        <description/>
+        <description>Output dataset file suffix</description>
       </parameter>
     </parameters>
     <capture_transform_performance>N</capture_transform_performance>
@@ -61,6 +61,27 @@
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
+    <notepad>
+      <note>java.util.Date cannot be cast to java.sql.Timestamp
+=> Changed timestamp to date here to make it run.</note>
+      <xloc>512</xloc>
+      <yloc>48</yloc>
+      <width>320</width>
+      <heigth>42</heigth>
+      <fontname>.AppleSystemUIFont</fontname>
+      <fontsize>13</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>14</fontcolorred>
+      <fontcolorgreen>58</fontcolorgreen>
+      <fontcolorblue>90</fontcolorblue>
+      <backgroundcolorred>201</backgroundcolorred>
+      <backgroundcolorgreen>232</backgroundcolorgreen>
+      <backgroundcolorblue>251</backgroundcolorblue>
+      <bordercolorred>14</bordercolorred>
+      <bordercolorgreen>58</bordercolorgreen>
+      <bordercolorblue>90</bordercolorblue>
+    </notepad>
   </notepads>
   <order>
     <hop>
@@ -123,6 +144,43 @@
     <GUI>
       <xloc>256</xloc>
       <yloc>384</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Convert to String</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>event_time</name>
+        <rename>event_time</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy-MM-dd HH:mm:ss.SSS</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <attributes/>
+    <GUI>
+      <xloc>352</xloc>
+      <yloc>112</yloc>
     </GUI>
   </transform>
   <transform>
@@ -189,43 +247,6 @@ var json = JSON.stringify(j);</jsScript_script>
     <GUI>
       <xloc>256</xloc>
       <yloc>288</yloc>
-    </GUI>
-  </transform>
-  <transform>
-    <name>Convert to String</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <select_unspecified>N</select_unspecified>
-      <meta>
-        <name>event_time</name>
-        <rename>event_time</rename>
-        <type>String</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask>yyyy-MM-dd HH:mm:ss.SSS</conversion_mask>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
-    </fields>
-    <attributes/>
-    <GUI>
-      <xloc>352</xloc>
-      <yloc>112</yloc>
     </GUI>
   </transform>
   <transform_error_handling>
