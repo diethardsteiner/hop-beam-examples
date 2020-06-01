@@ -58,7 +58,7 @@
             </child>
             <child>
               <id>gcpRegion</id>
-              <value/>
+              <value>europe-west2</value>
               <type>String</type>
             </child>
             <child>
@@ -68,7 +68,7 @@
             </child>
             <child>
               <id>tempLocation</id>
-              <value>gs://kettle-beam-storage/tmp/</value>
+              <value>gs://hop-beam-storage/tmp/</value>
               <type>String</type>
             </child>
             <child>
@@ -88,12 +88,12 @@
             </child>
             <child>
               <id>gcpStagingLocation</id>
-              <value>gs://kettle-beam-storage/binaries</value>
+              <value>gs://hop-beam-storage/binaries</value>
               <type>String</type>
             </child>
             <child>
               <id>fatJar</id>
-              <value/>
+              <value>/Users/diethardsteiner/test.jar</value>
               <type>String</type>
             </child>
             <child>
