@@ -1,0 +1,51 @@
+{
+  "variableValues": [],
+  "database_replacements": [],
+  "autoOpening": true,
+  "basePath": "",
+  "golden_data_sets": [
+    {
+      "field_mappings": [
+        {
+          "transform_field": "json",
+          "data_set_field": "json"
+        }
+      ],
+      "field_order": [
+        ""
+      ],
+      "transform_name": "Beam Output",
+      "data_set_name": "events-output-data"
+    }
+  ],
+  "input_data_sets": [
+    {
+      "field_mappings": [
+        {
+          "transform_field": "event_time",
+          "data_set_field": "event_time"
+        },
+        {
+          "transform_field": "sensor_id",
+          "data_set_field": "sensor_id"
+        },
+        {
+          "transform_field": "amount",
+          "data_set_field": "amount"
+        }
+      ],
+      "field_order": [
+        "event_time",
+        "sensor_id"
+      ],
+      "transform_name": "Beam Input",
+      "data_set_name": "events-input-data"
+    }
+  ],
+  "name": "transform-event-data-to-json UNIT",
+  "description": "",
+  "trans_test_tweaks": [],
+  "persist_filename": "",
+  "pipeline_filename": "./pipelines-and-workflows/transform-event-data-to-json.hpl",
+  "test_type": "UNIT_TEST"
+}

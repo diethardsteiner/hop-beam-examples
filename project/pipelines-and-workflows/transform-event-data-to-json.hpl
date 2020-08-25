@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pipeline>
   <info>
-    <name>transform_event_data_to_json</name>
+    <name>transform-event-data-to-json</name>
     <name_sync_with_filename>Y</name_sync_with_filename>
     <description/>
     <extended_description/>
@@ -16,12 +16,12 @@
       </parameter>
       <parameter>
         <name>PARAM_INPUT_DATASET_FIELD_SEPARATOR</name>
-        <default_value/>
+        <default_value>,</default_value>
         <description>Input dataset field seperator</description>
       </parameter>
       <parameter>
         <name>PARAM_INPUT_DATASET_FILE_PATH</name>
-        <default_value/>
+        <default_value>/Users/diethardsteiner/git/hop-beam-examples/project/datasets/event-data.csv</default_value>
         <description>Input dataset file path</description>
       </parameter>
       <parameter>
@@ -36,17 +36,17 @@
       </parameter>
       <parameter>
         <name>PARAM_OUTPUT_DATASET_FILE_PATH</name>
-        <default_value/>
+        <default_value>/tmp/events</default_value>
         <description>Output dataset file path</description>
       </parameter>
       <parameter>
         <name>PARAM_OUTPUT_DATASET_FILE_PREFIX</name>
-        <default_value/>
+        <default_value>events</default_value>
         <description>Output dataset file prefix</description>
       </parameter>
       <parameter>
         <name>PARAM_OUTPUT_DATASET_FILE_SUFFIX</name>
-        <default_value/>
+        <default_value>.csv</default_value>
         <description>Output dataset file suffix</description>
       </parameter>
     </parameters>
@@ -214,7 +214,7 @@ PARAM_OUTPUT_DATASET_FILE_SUFFIX	.csv	Output dataset file suffix
   </transform>
   <transform>
     <name>JavaScript: Convert to JSON</name>
-    <type>ScriptValuesMod</type>
+    <type>ScriptValueMod</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>

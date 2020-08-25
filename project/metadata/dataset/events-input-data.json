@@ -1,0 +1,32 @@
+{
+  "base_filename": "events-input-data.csv",
+  "name": "events-input-data",
+  "description": "",
+  "dataset_fields": [
+    {
+      "field_comment": "",
+      "field_length": -1,
+      "field_type": 9,
+      "field_precision": -1,
+      "field_format": "yyyy-MM-dd HH:mm:ss.SSS",
+      "field_name": "event_time"
+    },
+    {
+      "field_comment": "",
+      "field_length": -1,
+      "field_type": 2,
+      "field_precision": -1,
+      "field_format": "",
+      "field_name": "sensor_id"
+    },
+    {
+      "field_comment": "",
+      "field_length": -1,
+      "field_type": 5,
+      "field_precision": -1,
+      "field_format": "",
+      "field_name": "amount"
+    }
+  ],
+  "folder_name": ""
+}

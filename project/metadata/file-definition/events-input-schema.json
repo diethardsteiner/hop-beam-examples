@@ -1,0 +1,29 @@
+{
+  "enclosure": "${PARAM_INPUT_DATASET_FIELD_ENCLOSURE}",
+  "name": "events-input-schema",
+  "description": "",
+  "fieldDefinitions": [
+    {
+      "hopType": "Timestamp",
+      "precision": -1,
+      "name": "event_time",
+      "length": -1,
+      "formatMask": "yyyy-MM-dd HH:mm:ss.SSS"
+    },
+    {
+      "hopType": "String",
+      "precision": -1,
+      "name": "sensor_id",
+      "length": -1,
+      "formatMask": ""
+    },
+    {
+      "hopType": "Integer",
+      "precision": -1,
+      "name": "amount",
+      "length": -1,
+      "formatMask": ""
+    }
+  ],
+  "separator": "${PARAM_INPUT_DATASET_FIELD_SEPARATOR}"
+}

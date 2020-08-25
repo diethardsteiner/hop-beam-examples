@@ -1,0 +1,51 @@
+{
+  "variables" : [ {
+    "name" : "VAR_ENV_TEST1",
+    "value" : "c",
+    "description" : ""
+  }, {
+    "name" : "VAR_ENV_TEST2",
+    "value" : "d",
+    "description" : ""
+  }, {
+    "name" : "VAR_GCP_DATAFLOW_PROJECT",
+    "value" : "kettle-beam-224314",
+    "description" : ""
+  }, {
+    "name" : "VAR_GCP_DATAFLOW_APP_NAME",
+    "value" : "BeamExamples",
+    "description" : ""
+  }, {
+    "name" : "VAR_GCP_DATAFLOW_STAGING_LOCATION",
+    "value" : "gs://hop-beam-storage/binaries",
+    "description" : ""
+  }, {
+    "name" : "VAR_GCP_DATAFLOW_INITIAL_NUMBER_OF_WORKERS",
+    "value" : "1",
+    "description" : ""
+  }, {
+    "name" : "VAR_GCP_DATAFLOW_MAX_NUMBER_OF_WORKERS",
+    "value" : "2",
+    "description" : ""
+  }, {
+    "name" : "VAR_GCP_DATAFLOW_WORKER_MACHINE_TYPE",
+    "value" : "e2-standard-2",
+    "description" : ""
+  }, {
+    "name" : "VAR_GCP_DATAFLOW_REGION",
+    "value" : "europe-west2",
+    "description" : ""
+  }, {
+    "name" : "VAR_GCP_DATAFLOW_USER_AGENT",
+    "value" : "Hop",
+    "description" : ""
+  }, {
+    "name" : "VAR_GCP_DATAFLOW_TEMP_LOCATION",
+    "value" : "gs://hop-beam-storage/tmp",
+    "description" : ""
+  }, {
+    "name" : "VAR_GCP_DATAFLOW_FAT_JAR_FILE_LOCATION",
+    "value" : "/tmp/fat.jar",
+    "description" : ""
+  } ]
+}

@@ -1,0 +1,28 @@
+{
+  "engineRunConfiguration": {
+    "BeamDataFlowPipelineEngine": {
+      "gcpWorkerMachineType": "${VAR_GCP_DATAFLOW_WORKER_MACHINE_TYPE}",
+      "streamingHopTransformsBufferSize": "",
+      "gcpMaximumNumberOfWorkers": "${VAR_GCP_DATAFLOW_MAX_NUMBER_OF_WORKERS}",
+      "gcpZone": "",
+      "gcpProjectId": "${VAR_GCP_DATAFLOW_PROJECT}",
+      "userAgent": "${VAR_GCP_DATAFLOW_USER_AGENT}",
+      "gcpRegion": "${VAR_GCP_DATAFLOW_REGION}",
+      "pluginsToStage": "",
+      "tempLocation": "${VAR_GCP_DATAFLOW_TEMP_LOCATION}",
+      "gcpWorkerDiskType": "",
+      "gcpAppName": "${VAR_GCP_DATAFLOW_APP_NAME}",
+      "gcpInitialNumberOfWorkers": "${VAR_GCP_DATAFLOW_INITIAL_NUMBER_OF_WORKERS}",
+      "gcpStagingLocation": "${VAR_GCP_DATAFLOW_STAGING_LOCATION}",
+      "fatJar": "${VAR_GCP_DATAFLOW_FAT_JAR_FILE_LOCATION}",
+      "streamingHopTransformsFlushInterval": "",
+      "transformPluginClasses": "",
+      "gcpDiskSizeGb": "",
+      "gcpAutoScalingAlgorithm": "",
+      "xpPluginClasses": ""
+    }
+  },
+  "name": "beam-dataflow",
+  "configurationVariables": [],
+  "description": ""
+}
